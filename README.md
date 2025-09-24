@@ -2,7 +2,7 @@
 **GenAI-Assisted Reproducible Modelling Framework for Mpox AI Research**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](#license)  
-**Repo:** <https://github.com/<your-org>/garmf-mpox> • **DOI:** <10.5281/zenodo.xxxxxxx> • **Appendix D:** (thesis)
+**Repo:** <https://github.com/chadrack-123/Framework> • **DOI:** <10.5281/zenodo.xxxxxxx> • **Appendix D:** (thesis)
 
 ## Overview
 **GARMF-Mpox** is a lightweight, end-to-end framework that makes mpox AI studies **reproducible** and **auditable**. It standardises:
@@ -46,8 +46,8 @@ The framework does **not** prescribe a single model. It provides a governed proc
 ### 1) Create environment
 ```bash
 # Clone
-git clone https://github.com/<your-org>/garmf-mpox
-cd garmf-mpox
+git clone https://github.com/chadrack-123/Framework
+cd Framework
 
 # Conda (CPU example; use CUDA yml if you have a GPU)
 conda env create -f conf/env/environment.yml
@@ -202,7 +202,7 @@ If you use this framework, please cite:
   title   = {GARMF-Mpox: GenAI-Assisted Reproducible Modelling Framework for Mpox AI Research},
   author  = Chadrack Kavula Mulamba,
   year    = {2025},
-  url     = {https://github.com/<your-org>/garmf-mpox},
+  url     = {https://github.com/chadrack-123/Framework},
   version = {v1.0},
   doi     = {10.5281/zenodo.xxxxxxx}
 }
