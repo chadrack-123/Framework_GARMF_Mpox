@@ -1,0 +1,3 @@
+run_id,started,config_name,metrics,notes,paper_id,modality,dataset_key,model,synth,tuning,ReproScore
+1756981362,2025-09-04 12:22:42,imaging_baseline.yaml,"{'acc': 0.5957446808510638, 'f1': 0.5777777777777777}",imaging pipeline; synth=False; img_size=128,,,,,,,1.0
+1756981365,2025-09-04 12:22:45,imaging_genai.yaml,"{'acc': 0.574468085106383, 'f1': 0.6}",imaging pipeline; synth=True; img_size=128,,,,,,,1.0

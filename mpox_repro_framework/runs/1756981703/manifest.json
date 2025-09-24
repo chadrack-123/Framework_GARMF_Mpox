@@ -1,0 +1,47 @@
+{
+  "run_id": "1756981703",
+  "started": "2025-09-04 12:28:23",
+  "paper_id": "Farzipour_2023",
+  "modality": "tabular",
+  "dataset_key": "symptom_farzipour",
+  "model": {
+    "name": "xgboost",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 4,
+      "learning_rate": 0.08
+    }
+  },
+  "synth": {
+    "enabled": false
+  },
+  "metrics": {
+    "acc": 0.8867924528301887,
+    "f1": 0.9387755102040817,
+    "f1_ci": [
+      0.8842105263157894,
+      0.9807692307692307
+    ],
+    "threshold": 0.39333659410476685,
+    "f1_tuned": 0.9494949494949495,
+    "f1_tuned_ci": [
+      0.8958333333333334,
+      0.9902912621359223
+    ]
+  },
+  "tuning": {
+    "tune_enabled": true,
+    "method": "grid",
+    "cv": 5,
+    "scoring": "f1",
+    "best_params": {
+      "colsample_bytree": 0.7,
+      "learning_rate": 0.05,
+      "max_depth": 3,
+      "min_child_weight": 1,
+      "n_estimators": 500,
+      "subsample": 0.9
+    },
+    "best_score_cv": 0.9424680344930122
+  }
+}

@@ -1,0 +1,56 @@
+paper_id: Farzipour_2023
+modality: tabular
+dataset: symptom_farzipour
+model:
+  name: xgboost
+  params:
+    n_estimators: 300
+    max_depth: 4
+    learning_rate: 0.08
+synth:
+  enabled: true
+  minority_multiplier: 2.0
+  target_ratio: 0.8
+metrics:
+  threshold_tuning: true
+  ci:
+    enabled: true
+    B: 1000
+    alpha: 0.05
+  seed: 1337
+  auto_doc: true
+  tune:
+    enabled: true
+    method: grid
+    cv: 5
+    scoring: f1
+    param_grid:
+      n_estimators:
+      - 200
+      - 300
+      - 500
+      max_depth:
+      - 3
+      - 4
+      - 5
+      learning_rate:
+      - 0.05
+      - 0.08
+      - 0.1
+      subsample:
+      - 0.7
+      - 0.9
+      - 1.0
+      colsample_bytree:
+      - 0.7
+      - 0.9
+      - 1.0
+      min_child_weight:
+      - 1
+      - 3
+      - 5
+    xai:
+      enabled: true
+      method: shap        # shap | perm (perm = sklearn permutation importance)
+      sample_background: 200   # for KernelExplainer fallback
+      top_k: 20

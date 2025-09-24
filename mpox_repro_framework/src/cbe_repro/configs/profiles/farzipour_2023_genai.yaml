@@ -1,0 +1,11 @@
+paper_id: farzipour_2023
+modality: tabular
+dataset: symptom_farzipour
+model:
+  type: xgboost
+  params: {}
+synth:
+  enabled: true
+  multiplier: 1.5
+metrics:
+  seed: 1337

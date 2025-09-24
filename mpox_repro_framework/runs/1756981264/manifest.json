@@ -1,0 +1,10 @@
+{
+  "run_id": "1756981264",
+  "started": "2025-09-04 12:21:04",
+  "config_name": "imaging_genai.yaml",
+  "metrics": {
+    "acc": 0.574468085106383,
+    "f1": 0.6
+  },
+  "notes": "imaging pipeline; synth=True; img_size=128"
+}

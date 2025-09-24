@@ -1,0 +1,53 @@
+{
+  "run_id": "1757023906",
+  "started": "2025-09-05 00:11:46",
+  "paper_id": "test",
+  "modality": "imaging",
+  "dataset_key": "mpox_images",
+  "model": {
+    "name": "logisticregression",
+    "params": {
+      "max_iter": 200,
+      "n_jobs": -1
+    }
+  },
+  "synth": {
+    "enabled": true,
+    "balance_to_max": true,
+    "applied": true
+  },
+  "metrics": {
+    "acc": 0.6170212765957447,
+    "f1": 0.6086956521739131,
+    "f1_ci": [
+      0.42416267942583735,
+      0.7692307692307693
+    ],
+    "threshold": 0.0056555600720827005,
+    "f1_tuned": 0.6268656716417911,
+    "f1_tuned_ci": [
+      0.4838709677419355,
+      0.7567567567567568
+    ]
+  },
+  "data_snapshot": {
+    "n_images_train": 181,
+    "n_images_val": 47,
+    "img_size": 128,
+    "train_counts_before": {
+      "0": 100,
+      "1": 81
+    },
+    "train_counts_after": {
+      "0": 100,
+      "1": 100
+    }
+  },
+  "tuning": {
+    "tune_enabled": false
+  },
+  "config_name": "imaging_genai.yaml",
+  "xai": {
+    "enabled": false
+  }
+}

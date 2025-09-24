@@ -1,0 +1,13 @@
+seed: 1337
+dataset: symptom_demo
+task: symptom_classification
+model:
+  name: RandomForestClassifier
+  params:
+    n_estimators: 300
+    max_depth: 8
+    random_state: 1337
+    class_weight: balanced
+synth:
+  enabled: true
+  minority_multiplier: 2.0

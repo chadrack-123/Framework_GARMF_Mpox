@@ -1,0 +1,27 @@
+paper_id: Ayana_2025
+modality: imaging
+dataset: mpox_images
+model:
+  name: vit_b16
+  params:
+    img_size: 224
+    epochs: 30
+    batch_size: 16
+    lr: 3.0e-4
+    weight_decay: 0.05
+    cosine_lr: true
+    patience: 7
+    amp: true
+    linear_probe_epochs: 5
+synth:
+  enabled: true
+  balance_to_max: true   # triggers WeightedRandomSampler balancing
+metrics:
+  seed: 1337
+  threshold_tuning: true
+  tune_for: accuracy
+  ci:
+    enabled: true
+    B: 1000
+    alpha: 0.05
+  auto_doc: true

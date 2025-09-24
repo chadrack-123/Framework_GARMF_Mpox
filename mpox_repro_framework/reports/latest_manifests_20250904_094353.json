@@ -1,0 +1,42 @@
+[
+  {
+    "run_id": "1756971830",
+    "started": "2025-09-04 09:43:50",
+    "config_name": "imaging_baseline.yaml",
+    "metrics": {
+      "acc": 0.5957446808510638,
+      "f1": 0.5777777777777777
+    },
+    "notes": "imaging pipeline; synth=False; img_size=128"
+  },
+  {
+    "run_id": "1756971832",
+    "started": "2025-09-04 09:43:52",
+    "config_name": "imaging_genai.yaml",
+    "metrics": {
+      "acc": 0.574468085106383,
+      "f1": 0.6
+    },
+    "notes": "imaging pipeline; synth=True; img_size=128"
+  },
+  {
+    "run_id": "1756971832",
+    "started": "2025-09-04 09:43:52",
+    "config_name": "imaging_genai.yaml",
+    "metrics": {
+      "acc": 0.574468085106383,
+      "f1": 0.6
+    },
+    "notes": "imaging pipeline; synth=True; img_size=128"
+  },
+  {
+    "run_id": "1756971832",
+    "started": "2025-09-04 09:43:52",
+    "config_name": "imaging_genai.yaml",
+    "metrics": {
+      "acc": 0.574468085106383,
+      "f1": 0.6
+    },
+    "notes": "imaging pipeline; synth=True; img_size=128"
+  }
+]

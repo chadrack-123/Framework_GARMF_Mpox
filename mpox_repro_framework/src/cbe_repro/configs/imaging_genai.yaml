@@ -1,0 +1,11 @@
+seed: 1337
+dataset: mpox_images
+task: imaging_classification
+image_size: 128
+model:
+  name: LogisticRegression
+  params:
+    C: 1.0
+synth:
+  enabled: true
+  minority_multiplier: 3.0

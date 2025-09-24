@@ -1,0 +1,59 @@
+{
+  "run_id": "1757443673",
+  "started": "2025-09-09 20:47:53",
+  "paper_id": "Ayana_2025",
+  "modality": "imaging",
+  "dataset_key": "mpox_images",
+  "model": {
+    "name": "vit_b16",
+    "params": {
+      "img_size": 224,
+      "epochs": 30,
+      "batch_size": 16,
+      "lr": 0.0003,
+      "weight_decay": 0.05,
+      "cosine_lr": true,
+      "patience": 7,
+      "amp": true
+    }
+  },
+  "synth": {
+    "enabled": true,
+    "balance_to_max": true,
+    "applied": true
+  },
+  "metrics": {
+    "acc": 0.6808510638297872,
+    "f1": 0.7692307692307693,
+    "f1_ci": [
+      0.6333333333333333,
+      0.8684496567505721
+    ],
+    "threshold": 0.5684494376182556,
+    "f1_tuned": 0.8,
+    "f1_tuned_ci": [
+      0.67795243302351,
+      0.8985507246376812
+    ]
+  },
+  "data_snapshot": {
+    "n_images_train": 181,
+    "n_images_val": 47,
+    "img_size": 224,
+    "train_counts_before": {
+      "0": 100,
+      "1": 81
+    },
+    "train_counts_after": {
+      "0": 100,
+      "1": 81
+    }
+  },
+  "tuning": {
+    "tune_enabled": false
+  },
+  "config_name": "imaging_vit_genai.yaml",
+  "xai": {
+    "enabled": false
+  }
+}

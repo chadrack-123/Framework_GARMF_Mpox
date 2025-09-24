@@ -1,0 +1,14 @@
+mpox_images:
+  root: data/mpox_images
+  splits:
+    train: train
+    val: val
+  classes:
+    positive: mpox
+    negative: non_mpox
+  image_size: 224
+symptom_demo:
+  path: data/symptom_demo.csv
+symptom_farzipour:
+  path: data/monkeypox_global_symptoms.csv
+  target: label

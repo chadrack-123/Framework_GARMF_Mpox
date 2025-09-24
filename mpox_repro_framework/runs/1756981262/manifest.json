@@ -1,0 +1,10 @@
+{
+  "run_id": "1756981262",
+  "started": "2025-09-04 12:21:02",
+  "config_name": "imaging_baseline.yaml",
+  "metrics": {
+    "acc": 0.5957446808510638,
+    "f1": 0.5777777777777777
+  },
+  "notes": "imaging pipeline; synth=False; img_size=128"
+}

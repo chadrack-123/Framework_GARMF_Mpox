@@ -1,0 +1,66 @@
+{
+  "run_id": "1757430842",
+  "started": "2025-09-09 17:14:02",
+  "paper_id": "Farzipour_2023",
+  "modality": "tabular",
+  "dataset_key": "symptom_farzipour",
+  "model": {
+    "name": "xgboost",
+    "params": {
+      "n_estimators": 300,
+      "max_depth": 4,
+      "learning_rate": 0.08
+    }
+  },
+  "synth": {
+    "enabled": true,
+    "minority_multiplier": 2.0,
+    "target_ratio": 0.8,
+    "applied": true
+  },
+  "metrics": {
+    "acc": 0.7735849056603774,
+    "f1": 0.8666666666666667,
+    "f1_ci": [
+      0.7847301033027789,
+      0.937531887755102
+    ],
+    "threshold": 0.19715172052383423,
+    "f1_tuned": 0.9494949494949495,
+    "f1_tuned_ci": [
+      0.8958333333333334,
+      0.9902912621359223
+    ]
+  },
+  "data_snapshot": {
+    "n_features": 46,
+    "label_col": "status",
+    "train_counts_before": {
+      "0": 19,
+      "1": 139
+    },
+    "train_counts_after": {
+      "0": 112,
+      "1": 139
+    }
+  },
+  "tuning": {
+    "tune_enabled": true,
+    "method": "grid",
+    "cv": 5,
+    "scoring": "f1",
+    "best_params": {
+      "colsample_bytree": 0.7,
+      "learning_rate": 0.08,
+      "max_depth": 5,
+      "min_child_weight": 1,
+      "n_estimators": 300,
+      "subsample": 0.9
+    },
+    "best_score_cv": 0.8436412216878365
+  },
+  "config_name": "farzipour_2023_genai.yaml",
+  "xai": {
+    "enabled": false
+  }
+}
